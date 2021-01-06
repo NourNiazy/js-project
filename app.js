@@ -22,13 +22,15 @@ function selectBackgroundx(){
 }
 function selectBackgroundy(){
   // Find your selector and pull it's selection
-  var select = document.getElementById('selector');
-  // Determine your target color (default 0 index to transparent)
-  var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
-  // Update your results area
-  document.getElementsByClassName("game-grid").style["grid-template-columns"] = color;
-   // var nn=document.getElementsByClassName("game-cell");
-   // nn[0].style["background-color"] = color;
+ var select = document.getElementById('selectory');
+ // Determine your target color (default 0 index to transparent)
+ var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+ // Update your results area
+ var nn=document.getElementsByClassName("o");
+  for(var i=0;i<=nn.length;i++){
+    
+  nn[i].style.color = color;
+  }
  }
 
 // HTML Elements
