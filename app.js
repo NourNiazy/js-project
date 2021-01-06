@@ -1,37 +1,4 @@
-function selectBackground(){
- // Find your selector and pull it's selection
- var select = document.getElementById('selector');
- // Determine your target color (default 0 index to transparent)
- var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
- // Update your results area
- var n=document.getElementsByClassName("game-cell");
-  for(var i=0;i<=n.length;i++){
-    
-  n[i].style["background-color"] = color;
-  }
-  // var nn=document.getElementsByClassName("game-cell");
-  // nn[0].style["background-color"] = color;
-}
-function selectBackgroundx(){
-  // Find your selector and pull it's selection
-  var select = document.getElementById('selectorx');
-  // Determine your target color (default 0 index to transparent)
-  var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
-  // Update your results area
-  document.body.style.color = color;
-}
-function selectBackgroundy(){
-  // Find your selector and pull it's selection
- var select = document.getElementById('selectory');
- // Determine your target color (default 0 index to transparent)
- var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
- // Update your results area
- var nn=document.getElementsByClassName("o");
-  for(var i=0;i<=nn.length;i++){
-    
-  nn[i].style.color = color;
-  }
- }
+
 
 // HTML Elements
 const statusDiv = document.querySelector('.status');
@@ -160,3 +127,40 @@ resetDiv.addEventListener('click', handleReset);
 for (const cellDiv of cellDivs) {
   cellDiv.addEventListener('click', handleCellClick)
 }
+
+
+
+function selectBackground(){
+  // Find your selector and pull it's selection
+  var select = document.getElementById('selector');
+  // Determine your target color (default 0 index to transparent)
+  var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+  // Update your results area
+  var n=document.getElementsByClassName("game-cell");
+   for(var i=0;i<=n.length;i++){
+     
+   n[i].style["background-color"] = color;
+   }
+   // var nn=document.getElementsByClassName("game-cell");
+   // nn[0].style["background-color"] = color;
+ }
+ function selectBackgroundx(){
+   // Find your selector and pull it's selection
+   var select = document.getElementById('selectorx');
+   // Determine your target color (default 0 index to transparent)
+   var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+   // Update your results area
+   document.body.style.color = color;
+ }
+ function selectBackgroundy(){
+   // Find your selector and pull it's selection
+  var select = document.getElementById('selectory');
+  // Determine your target color (default 0 index to transparent)
+  var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+  // Update your results area
+  var nn=document.getElementsByClassName("o");
+   for(var i=0;i<=nn.length;i++){
+     
+   nn[i].style.color = color;
+   }
+  }
