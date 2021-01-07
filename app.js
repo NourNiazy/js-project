@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 // HTML Elements
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
