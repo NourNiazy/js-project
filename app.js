@@ -152,25 +152,25 @@ function selectBackground(){
  }
  function selectBackgroundx(){
    // Find your selector and pull it's selection
-   var select = document.getElementById('selectorx');
+   var select1 = document.getElementById('selectorx');
    // Determine your target color (default 0 index to transparent)
-   var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+   var color1 = (select1.selectedIndex != 0) ? select1.options[select1.selectedIndex].value : 'transparent';
     // Update your results area
   var nnn=document.getElementsByClassName("x");
   for(var i=0;i<=nnn.length;i++){
     
-  nnn[i].style.color = color;
+  nnn[i].style.color = color1;
   }
  }
  function selectBackgroundy(){
    // Find your selector and pull it's selection
-  var select = document.getElementById('selectory');
+  var select2 = document.getElementById('selectory');
   // Determine your target color (default 0 index to transparent)
-  var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
+  var color2 = (select2.selectedIndex != 0) ? select2.options[select2.selectedIndex].value : 'transparent';
   // Update your results area
   var nn=document.getElementsByClassName("o");
    for(var i=0;i<=nn.length;i++){
      
-   nn[i].style.color = color;
+   nn[i].style.color = color2;
    }
   }
