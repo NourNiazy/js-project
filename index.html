@@ -15,20 +15,31 @@
       <div class="status">× is next</div>
       <div class="reset">Reset</div>
     </div>
-    <div class="selectors">
-      <select id="selector">
-          <option>Select Background</option>
-          <option value="#ffffff">Blue</option>
-          <option value="#ffb380">Yellow</option>
-          <option value="#ff6699">Green</option>
-          <option value="#dfff80">Red</option>
+    <div class="group">
+      <div class="selectors">
+        <select id="selector">
+            <option disabled>Select Background</option>
+            <option value="#ffffff">Blue</option>
+            <option value="#ffb380">Yellow</option>
+            <option value="#ff6699">Green</option>
+            <option value="#dfff80">Red</option>
+        </select>   
+    <button onclick="selectBackground()">Change Background Color</button>
+    </div>
+    <div class="selectorssize">
+      <select id="selectorsize">
+          <option disabled>Select size</option>
+          <option value="#ffffff">3X3</option>
+          <option value="#ffb380">4X4</option>
+          <option value="#ff6699">5X5</option>
       </select>   
-  <button onclick="selectBackground()">Change Background Color</button>
+  <button onclick="selectBackgroundsize()">Change size</button>
+  </div>
   </div>
   <div class="group">
     <div class="selectorsx">
       <select id="selectorx">
-          <option>X</option>
+          <option disabled>X</option>
           <option value="#ffffff">Blue</option>
           <option value="#ffb380">Yellow</option>
           <option value="#ff6699">Green</option>
@@ -38,7 +49,7 @@
     </div>
     <div class="selectorsy">
         <select id="selectory">
-            <option>Y</option>
+            <option disabled>Y</option>
             <option value="repeat(4, 1fr)">Blue</option>
             <option value="repeat(5, 1fr)">Yellow</option>
             <option value="#ff6699">Green</option>

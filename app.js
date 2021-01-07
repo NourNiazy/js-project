@@ -1,5 +1,3 @@
-
-
 // HTML Elements
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
@@ -114,6 +112,7 @@ const handleCellClick = (e) => {
   if (xIsNext) {
     classList.add('x');
     checkGameStatus();
+    
   } else {
     classList.add('o');
     checkGameStatus();
@@ -149,8 +148,12 @@ function selectBackground(){
    var select = document.getElementById('selectorx');
    // Determine your target color (default 0 index to transparent)
    var color = (select.selectedIndex != 0) ? select.options[select.selectedIndex].value : 'transparent';
-   // Update your results area
-   document.body.style.color = color;
+    // Update your results area
+  var nnn=document.getElementsByClassName("x");
+  for(var i=0;i<=nnn.length;i++){
+    
+  nnn[i].style.color = color;
+  }
  }
  function selectBackgroundy(){
    // Find your selector and pull it's selection

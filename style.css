@@ -128,20 +128,20 @@ body {
     font-size: 125px;
   }
 }
-.selectors,.selectorsx,.selectorsy{
+.selectors,.selectorsx,.selectorsy,.selectorssize{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-.selectors button,.selectorsx button,.selectorsy button{
+.selectors button,.selectorsx button,.selectorsy button,.selectorssize button{
   border: none;
   padding: 6px 12px;
   margin-left: 10px;
   border-radius: 5px;
   color: #a34fbd;
 }
-.selectors select,.selectorsx select,.selectorsy select{
+.selectors select,.selectorsx select,.selectorsy select,.selectorssize select{
   padding: 5px 10px;
   border: none;
 }
